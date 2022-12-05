@@ -2,7 +2,7 @@
 var rp = require('request-promise');
 
 
-const url = 'http://hq.sinajs.cn/list=';
+const url = 'http://qt.gtimg.cn/q=';
 
 const headers = {
     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36'
@@ -10,7 +10,7 @@ const headers = {
 
 export default {
     getData(code, callback) {
-        var codeArr = code.split(",");
+        var codeArr = code.split("~");
 
         var textAll = "";
 
